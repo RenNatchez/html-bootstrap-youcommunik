@@ -29,6 +29,8 @@
   --dark: #343a40;
   --maxou: #e43989;
   --noir: #000;
+  --prima-blue: #334D5C;
+  --prima-grey: #EAE3D6;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1898,6 +1900,46 @@ pre code {
   background-color: #ababab;
 }
 
+.table-prima-blue,
+.table-prima-blue > th,
+.table-prima-blue > td {
+  background-color: #c6cdd1;
+}
+.table-prima-blue th,
+.table-prima-blue td,
+.table-prima-blue thead th,
+.table-prima-blue tbody + tbody {
+  border-color: #95a2aa;
+}
+
+.table-hover .table-prima-blue:hover {
+  background-color: #b8c1c6;
+}
+.table-hover .table-prima-blue:hover > td,
+.table-hover .table-prima-blue:hover > th {
+  background-color: #b8c1c6;
+}
+
+.table-prima-grey,
+.table-prima-grey > th,
+.table-prima-grey > td {
+  background-color: #f9f7f4;
+}
+.table-prima-grey th,
+.table-prima-grey td,
+.table-prima-grey thead th,
+.table-prima-grey tbody + tbody {
+  border-color: #f4f0ea;
+}
+
+.table-hover .table-prima-grey:hover {
+  background-color: #f0ebe4;
+}
+.table-hover .table-prima-grey:hover > td,
+.table-hover .table-prima-grey:hover > th {
+  background-color: #f0ebe4;
+}
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -2757,6 +2799,66 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5);
 }
 
+.btn-prima-blue {
+  color: #fff;
+  background-color: #334D5C;
+  border-color: #334D5C;
+}
+.btn-prima-blue:hover {
+  color: #fff;
+  background-color: #253843;
+  border-color: #21323b;
+}
+.btn-prima-blue:focus, .btn-prima-blue.focus {
+  color: #fff;
+  background-color: #253843;
+  border-color: #21323b;
+  box-shadow: 0 0 0 0.2rem rgba(82, 104, 116, 0.5);
+}
+.btn-prima-blue.disabled, .btn-prima-blue:disabled {
+  color: #fff;
+  background-color: #334D5C;
+  border-color: #334D5C;
+}
+.btn-prima-blue:not(:disabled):not(.disabled):active, .btn-prima-blue:not(:disabled):not(.disabled).active, .show > .btn-prima-blue.dropdown-toggle {
+  color: #fff;
+  background-color: #21323b;
+  border-color: #1c2b33;
+}
+.btn-prima-blue:not(:disabled):not(.disabled):active:focus, .btn-prima-blue:not(:disabled):not(.disabled).active:focus, .show > .btn-prima-blue.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(82, 104, 116, 0.5);
+}
+
+.btn-prima-grey {
+  color: #212529;
+  background-color: #EAE3D6;
+  border-color: #EAE3D6;
+}
+.btn-prima-grey:hover {
+  color: #212529;
+  background-color: #ddd2bd;
+  border-color: #d9ccb4;
+}
+.btn-prima-grey:focus, .btn-prima-grey.focus {
+  color: #212529;
+  background-color: #ddd2bd;
+  border-color: #d9ccb4;
+  box-shadow: 0 0 0 0.2rem rgba(204, 199, 188, 0.5);
+}
+.btn-prima-grey.disabled, .btn-prima-grey:disabled {
+  color: #212529;
+  background-color: #EAE3D6;
+  border-color: #EAE3D6;
+}
+.btn-prima-grey:not(:disabled):not(.disabled):active, .btn-prima-grey:not(:disabled):not(.disabled).active, .show > .btn-prima-grey.dropdown-toggle {
+  color: #212529;
+  background-color: #d9ccb4;
+  border-color: #d4c6ac;
+}
+.btn-prima-grey:not(:disabled):not(.disabled):active:focus, .btn-prima-grey:not(:disabled):not(.disabled).active:focus, .show > .btn-prima-grey.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(204, 199, 188, 0.5);
+}
+
 .btn-outline-primary {
   color: #007bff;
   border-color: #007bff;
@@ -3005,6 +3107,56 @@ fieldset:disabled a.btn {
 }
 .btn-outline-noir:not(:disabled):not(.disabled):active:focus, .btn-outline-noir:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-noir.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.btn-outline-prima-blue {
+  color: #334D5C;
+  border-color: #334D5C;
+}
+.btn-outline-prima-blue:hover {
+  color: #fff;
+  background-color: #334D5C;
+  border-color: #334D5C;
+}
+.btn-outline-prima-blue:focus, .btn-outline-prima-blue.focus {
+  box-shadow: 0 0 0 0.2rem rgba(51, 77, 92, 0.5);
+}
+.btn-outline-prima-blue.disabled, .btn-outline-prima-blue:disabled {
+  color: #334D5C;
+  background-color: transparent;
+}
+.btn-outline-prima-blue:not(:disabled):not(.disabled):active, .btn-outline-prima-blue:not(:disabled):not(.disabled).active, .show > .btn-outline-prima-blue.dropdown-toggle {
+  color: #fff;
+  background-color: #334D5C;
+  border-color: #334D5C;
+}
+.btn-outline-prima-blue:not(:disabled):not(.disabled):active:focus, .btn-outline-prima-blue:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-prima-blue.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(51, 77, 92, 0.5);
+}
+
+.btn-outline-prima-grey {
+  color: #EAE3D6;
+  border-color: #EAE3D6;
+}
+.btn-outline-prima-grey:hover {
+  color: #212529;
+  background-color: #EAE3D6;
+  border-color: #EAE3D6;
+}
+.btn-outline-prima-grey:focus, .btn-outline-prima-grey.focus {
+  box-shadow: 0 0 0 0.2rem rgba(234, 227, 214, 0.5);
+}
+.btn-outline-prima-grey.disabled, .btn-outline-prima-grey:disabled {
+  color: #EAE3D6;
+  background-color: transparent;
+}
+.btn-outline-prima-grey:not(:disabled):not(.disabled):active, .btn-outline-prima-grey:not(:disabled):not(.disabled).active, .show > .btn-outline-prima-grey.dropdown-toggle {
+  color: #212529;
+  background-color: #EAE3D6;
+  border-color: #EAE3D6;
+}
+.btn-outline-prima-grey:not(:disabled):not(.disabled):active:focus, .btn-outline-prima-grey:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-prima-grey.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(234, 227, 214, 0.5);
 }
 
 .btn-link {
@@ -4926,6 +5078,32 @@ a.badge-noir:focus, a.badge-noir.focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
 }
 
+.badge-prima-blue {
+  color: #fff;
+  background-color: #334D5C;
+}
+a.badge-prima-blue:hover, a.badge-prima-blue:focus {
+  color: #fff;
+  background-color: #21323b;
+}
+a.badge-prima-blue:focus, a.badge-prima-blue.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(51, 77, 92, 0.5);
+}
+
+.badge-prima-grey {
+  color: #212529;
+  background-color: #EAE3D6;
+}
+a.badge-prima-grey:hover, a.badge-prima-grey:focus {
+  color: #212529;
+  background-color: #d9ccb4;
+}
+a.badge-prima-grey:focus, a.badge-prima-grey.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(234, 227, 214, 0.5);
+}
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -5090,6 +5268,30 @@ a.badge-noir:focus, a.badge-noir.focus {
 }
 .alert-noir .alert-link {
   color: black;
+}
+
+.alert-prima-blue {
+  color: #1b2830;
+  background-color: #d6dbde;
+  border-color: #c6cdd1;
+}
+.alert-prima-blue hr {
+  border-top-color: #b8c1c6;
+}
+.alert-prima-blue .alert-link {
+  color: #090d0f;
+}
+
+.alert-prima-grey {
+  color: #7a766f;
+  background-color: #fbf9f7;
+  border-color: #f9f7f4;
+}
+.alert-prima-grey hr {
+  border-top-color: #f0ebe4;
+}
+.alert-prima-grey .alert-link {
+  color: #5f5c57;
 }
 
 @keyframes progress-bar-stripes {
@@ -5475,6 +5677,34 @@ a.badge-noir:focus, a.badge-noir.focus {
   color: #fff;
   background-color: black;
   border-color: black;
+}
+
+.list-group-item-prima-blue {
+  color: #1b2830;
+  background-color: #c6cdd1;
+}
+.list-group-item-prima-blue.list-group-item-action:hover, .list-group-item-prima-blue.list-group-item-action:focus {
+  color: #1b2830;
+  background-color: #b8c1c6;
+}
+.list-group-item-prima-blue.list-group-item-action.active {
+  color: #fff;
+  background-color: #1b2830;
+  border-color: #1b2830;
+}
+
+.list-group-item-prima-grey {
+  color: #7a766f;
+  background-color: #f9f7f4;
+}
+.list-group-item-prima-grey.list-group-item-action:hover, .list-group-item-prima-grey.list-group-item-action:focus {
+  color: #7a766f;
+  background-color: #f0ebe4;
+}
+.list-group-item-prima-grey.list-group-item-action.active {
+  color: #fff;
+  background-color: #7a766f;
+  border-color: #7a766f;
 }
 
 .close {
@@ -6332,6 +6562,26 @@ button.bg-noir:focus {
   background-color: black !important;
 }
 
+.bg-prima-blue {
+  background-color: #334D5C !important;
+}
+
+a.bg-prima-blue:hover, a.bg-prima-blue:focus,
+button.bg-prima-blue:hover,
+button.bg-prima-blue:focus {
+  background-color: #21323b !important;
+}
+
+.bg-prima-grey {
+  background-color: #EAE3D6 !important;
+}
+
+a.bg-prima-grey:hover, a.bg-prima-grey:focus,
+button.bg-prima-grey:hover,
+button.bg-prima-grey:focus {
+  background-color: #d9ccb4 !important;
+}
+
 .bg-white {
   background-color: #fff !important;
 }
@@ -6418,6 +6668,14 @@ button.bg-noir:focus {
 
 .border-noir {
   border-color: #000 !important;
+}
+
+.border-prima-blue {
+  border-color: #334D5C !important;
+}
+
+.border-prima-grey {
+  border-color: #EAE3D6 !important;
 }
 
 .border-white {
@@ -10029,6 +10287,22 @@ a.text-maxou:hover, a.text-maxou:focus {
 
 a.text-noir:hover, a.text-noir:focus {
   color: black !important;
+}
+
+.text-prima-blue {
+  color: #334D5C !important;
+}
+
+a.text-prima-blue:hover, a.text-prima-blue:focus {
+  color: #18242b !important;
+}
+
+.text-prima-grey {
+  color: #EAE3D6 !important;
+}
+
+a.text-prima-grey:hover, a.text-prima-grey:focus {
+  color: #d0c0a3 !important;
 }
 
 .text-body {
